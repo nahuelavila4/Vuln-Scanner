@@ -21,6 +21,7 @@ def scanner():
         print(f"Error: {e}")
 
 def check_https(domain):
+    print("als")
     cert = ssl.create_defaul_context() #Manage security configuration
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((domain, 443))
